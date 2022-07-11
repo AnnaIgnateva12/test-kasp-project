@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background-color: rgba(29, 29, 27, 0.4);
+    padding: 0 10%;
+    vertical-align: center;
+}
+
+header select {
+    width: 70px;
+    height: 38px;
+    background-color: #F2F2F2;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
