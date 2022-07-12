@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/AnnaIgnateva12/test-kasp-project/static/css/main.b14663f2.css",
-    "main.js": "/AnnaIgnateva12/test-kasp-project/static/js/main.39ed41eb.js",
+    "main.css": "/AnnaIgnateva12/test-kasp-project/static/css/main.0d763d90.css",
+    "main.js": "/AnnaIgnateva12/test-kasp-project/static/js/main.8fdeada2.js",
     "static/js/787.3535e913.chunk.js": "/AnnaIgnateva12/test-kasp-project/static/js/787.3535e913.chunk.js",
     "static/media/Intersect.png": "/AnnaIgnateva12/test-kasp-project/static/media/Intersect.5b264f936a1eb92837c1.png",
+    "static/media/Windows.svg": "/AnnaIgnateva12/test-kasp-project/static/media/Windows.e81c20d78fd6bada3782e1dd952c45fe.svg",
+    "static/media/MacOS.svg": "/AnnaIgnateva12/test-kasp-project/static/media/MacOS.5b31312d7dd3f4add2762c1d4e7a600a.svg",
+    "static/media/Android.svg": "/AnnaIgnateva12/test-kasp-project/static/media/Android.24f596c52c4d92fdd8411e86bead9fbb.svg",
+    "static/media/KasperskyInternetSecurity.svg": "/AnnaIgnateva12/test-kasp-project/static/media/KasperskyInternetSecurity.f5362eb7c4a2c0e5e86120969ecb782b.svg",
+    "static/media/IOS.svg": "/AnnaIgnateva12/test-kasp-project/static/media/IOS.6e63d7da712d79f477a8ca3901326311.svg",
     "static/media/Vector-logo.svg": "/AnnaIgnateva12/test-kasp-project/static/media/Vector-logo.dd62a1d919d1806fcadbb58ca19c2097.svg",
+    "static/media/ProductIcon.svg": "/AnnaIgnateva12/test-kasp-project/static/media/ProductIcon.dc5ad4d8de4b04784b1b3073ad361a8e.svg",
+    "static/media/Half-star.svg": "/AnnaIgnateva12/test-kasp-project/static/media/Half-star.a6cff05ee04de2081cebe1ced489125f.svg",
+    "static/media/Star.svg": "/AnnaIgnateva12/test-kasp-project/static/media/Star.7b7efd647d569823fddc7d2325d1be35.svg",
     "index.html": "/AnnaIgnateva12/test-kasp-project/index.html",
     "static/media/Check.svg": "/AnnaIgnateva12/test-kasp-project/static/media/Check.6400a6cdf4946593f71b.svg",
-    "main.b14663f2.css.map": "/AnnaIgnateva12/test-kasp-project/static/css/main.b14663f2.css.map",
-    "main.39ed41eb.js.map": "/AnnaIgnateva12/test-kasp-project/static/js/main.39ed41eb.js.map",
+    "main.0d763d90.css.map": "/AnnaIgnateva12/test-kasp-project/static/css/main.0d763d90.css.map",
+    "main.8fdeada2.js.map": "/AnnaIgnateva12/test-kasp-project/static/js/main.8fdeada2.js.map",
     "787.3535e913.chunk.js.map": "/AnnaIgnateva12/test-kasp-project/static/js/787.3535e913.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b14663f2.css",
-    "static/js/main.39ed41eb.js"
+    "static/css/main.0d763d90.css",
+    "static/js/main.8fdeada2.js"
   ]
 }
