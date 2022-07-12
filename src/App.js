@@ -1,12 +1,16 @@
 import './App.css';
+import BuyBlock from './components/buyBlock/BuyBlock';
 import Header from './components/header/Header';
-import Main from './components/main/Main';
+import MainText from './components/mainText/MainText';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <div className='Main'>
+        <Header />
+        <MainText />
+        <BuyBlock />
+      </div>
     </div>
   );
 }

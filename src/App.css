@@ -1,5 +1,7 @@
 .App {
   width: 100vw;
-    height: 100vh;
     background: url(assets/images/Intersect.png) top right / contain no-repeat, linear-gradient(to bottom right, #23D1AE 0%, #1D1D1B 25%);
+}
+.Main {
+  height: 100vh;
 }

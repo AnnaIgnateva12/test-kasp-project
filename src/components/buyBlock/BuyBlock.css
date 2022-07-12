@@ -1,0 +1,75 @@
+.buyBlock {
+    width: 80%;
+    height: 14%;
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transparentBlock {
+    width: 100%;
+    height: 25%;
+    color: #ffffff;
+    display: flex;
+}
+
+.Compatible {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    gap: 5%;
+    font-size: 0.7em;
+    font-style: light;
+}
+
+.Compatible img {
+    height: 80%;
+}
+
+.Save {
+    width: 20%;
+    background-color: #8233FF;
+    font-size: 1em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GreenBlock {
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to right, #7EFF33 0%, #23D1AE 20%);
+    display: flex;
+    align-items: center;
+
+}
+
+.productIcon {
+    margin: 0 5%;
+    width: 7%;
+    height: 80%;
+    /* border: solid 2px #ffffff */
+}
+
+.KasperAndStars {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-right: 6%;
+}
+
+.Score {
+    font-weight: 300;
+    font-size: 1em;
+    display: flex;
+    gap: 2%;
+}
+
+.VerticalLine {
+    width: 0.2%;
+    height: 80%;
+    background-color: #ffffff;
+    opacity: 20%;
+}

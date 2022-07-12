@@ -2,17 +2,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+    height: 8%;
     background-color: rgba(29, 29, 27, 0.4);
     padding: 0 10%;
     vertical-align: center;
 }
 
 header select {
-    width: 70px;
-    height: 38px;
+    width: 7%;
+        height: 50%;
     background-color: #F2F2F2;
-    padding: 8px;
+    padding: 0 8px;
     border: none;
     outline: none;
 }

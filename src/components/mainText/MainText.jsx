@@ -1,5 +1,5 @@
 import React from "react";
-import './Main.css';
+import './MainText.css';
 
 const advantages = [
     { title: 'Gaming mode', message: 'Ensures optimal PC performance while you play', id: '1' },
