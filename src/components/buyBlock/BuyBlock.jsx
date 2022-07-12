@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './BuyBlock.css';
 import productIcon from '../../assets/images/ProductIcon.svg';
 import KasperText from '../../assets/images/KasperskyInternetSecurity.svg';
@@ -8,8 +8,13 @@ import Windows from '../../assets/images/Windows.svg';
 import MacOS from '../../assets/images/MacOS.svg';
 import Android from '../../assets/images/Android.svg';
 import IOS from '../../assets/images/IOS.svg';
+import { customStyles, devices } from './constans';
+import Select from 'react-select';
 
 const BuyBlock = () => {
+    const [price, setPrice] = useState('35.99')
+    const bigPrice = (+price * 1.2).toFixed(2)
+
     return (
         <div className='buyBlock'>
             <div className='transparentBlock'>
@@ -39,10 +44,24 @@ const BuyBlock = () => {
                     </div>
                 </div>
                 <div className='VerticalLine' />
-                <div className='PriceBlock'><span className='CrossedOut'>£34.<span className='LittleNumbers'>99</span></span>
-                    <span className='BoldPrice'>£35.<span className='LittleNumbers'>99</span></span>
+                <div className='PriceBlock'>
+                    <span className='CrossedOut'>£ {bigPrice}</span>
+                    <span className='BoldPrice'>£ {price}</span>
                 </div>
                 <div className='VerticalLine' />
+                {/* <select className='SelectDevice' onChange={(e) => {
+                    let price = e.target.value.split(' ')[4]
+                    setPrice(price)
+                }}>
+                    {devices.map((item) => {
+                        return <option className='Option' key={item.text}>{item.text} {item.price}</option>
+                    })}
+                </select> */}
+                <div className='SelectDevice'>
+                    <Select options={devices} styles={customStyles} menuPlacement="auto" onChange={(v) => setPrice(v.value)} />
+                </div>
+
+                <button className='BuyNow'>Buy Now</button>
             </div>
         </div>
     )
