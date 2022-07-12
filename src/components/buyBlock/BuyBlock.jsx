@@ -39,6 +39,10 @@ const BuyBlock = () => {
                     </div>
                 </div>
                 <div className='VerticalLine' />
+                <div className='PriceBlock'><span className='CrossedOut'>£34.<span className='LittleNumbers'>99</span></span>
+                    <span className='BoldPrice'>£35.<span className='LittleNumbers'>99</span></span>
+                </div>
+                <div className='VerticalLine' />
             </div>
         </div>
     )

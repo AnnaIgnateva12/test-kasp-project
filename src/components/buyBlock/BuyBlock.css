@@ -68,8 +68,29 @@
 }
 
 .VerticalLine {
-    width: 0.2%;
+    width: 2px;
     height: 80%;
     background-color: #ffffff;
     opacity: 20%;
+}
+.PriceBlock {
+    width: 19.8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CrossedOut {
+    text-decoration: line-through;
+    color: #006D5C;
+    font-size: 1.5em;
+}
+
+.BoldPrice {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.LittleNumbers {
+    font-size: 60%;
 }
