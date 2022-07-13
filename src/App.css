@@ -1,7 +1,27 @@
 .App {
-  width: 100vw;
-    background: url(assets/images/Intersect.png) top right / contain no-repeat, linear-gradient(to bottom right, #23D1AE 0%, #1D1D1B 25%);
-}
-.Main {
-  height: 100vh;
+  position: relative;
+    background: url(assets/images/Intersect.png) top right / 50% no-repeat, linear-gradient(to bottom right, #23D1AE 0%, #1D1D1B 10%);
+    min-width: 900px;
+    min-height: 400px;
+  }
+  
+    .Main {
+    min-width: 900px;
+    
+    }
+    
+    @media (max-width: 640px) {
+      .App {
+        min-width: 300px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .Main {
+        background: url(assets/images/Intersect.png) top left / contain no-repeat;
+    height: 100vh;
+      min-width: 300px;
+        height: min-content;
+      }
 }

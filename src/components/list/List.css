@@ -1,0 +1,25 @@
+.ListContainer {
+    width: 50%;
+    padding: 0 0 0 12%;
+    margin-bottom: 10%;
+}
+
+.ListUl {
+    list-style-image: url("../../assets/images/Check.svg");
+    padding: 0;
+    color: #ffffff
+}
+
+.ListLi {
+    padding: 1% 2%;
+    font-size: 16px;
+}
+
+.Title {
+    font-weight: 400;
+}
+
+.Message {
+    opacity: 80%;
+    font-weight: 300;
+}

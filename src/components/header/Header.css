@@ -1,18 +1,27 @@
-header {
+.Header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8%;
+    height: 48px;
     background-color: rgba(29, 29, 27, 0.4);
     padding: 0 10%;
     vertical-align: center;
+    min-width: 700px;
 }
 
-header select {
-    width: 7%;
-        height: 50%;
+.HeaderSelect {
+    width: 70px;
+    height: 28px;
     background-color: #F2F2F2;
     padding: 0 8px;
     border: none;
     outline: none;
+}
+@media (max-width: 640px) {
+    .Header {
+        position: sticky;
+        top: 0;
+        min-width: 300px;
+        padding: 2% 5%;
+    }
 }

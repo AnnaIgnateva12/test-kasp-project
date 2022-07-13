@@ -8,7 +8,7 @@ export const devices = [
 ]
 
 export const customStyles = {
-    option: styles => ({
+    option: (styles, state) => ({
         ...styles,
         color: '#1D1D1B',
         padding: '10px',
@@ -23,17 +23,12 @@ export const customStyles = {
             backgroundColor: "#7FE3CE"
         }
     }),
-
-    selectValue: styles => ({
-        ...styles,
-        backgroundColor: "#7FE3CE",
-        "&:checked": {
-            backgroundColor: "#7FE3CE"
-        }
-    }),
-    control: styles => ({
+    control: (styles, state) => {
+        const style = {
         ...styles,
         backgroundColor: '#23D1AE',
+            borderRadius: 'none',
+            boxShadow: 'none',
         border: 'solid 2px #1D1D1B',
         outline: 'none',
         fontSize: '14px',
@@ -41,17 +36,30 @@ export const customStyles = {
         "&:hover": {
             borderColor: "#1D1D1B",
             outline: 'none'
-        },
+            }
+
+        }
+        if (state.menuIsOpen && state.menuPlacement === 'top') {
+            style.borderTop = 'none'
+        }
+        return style;
+
+    },
+    indicatorSeparator: styles => ({
+        ...styles,
+        display: 'none'
     }),
     dropdownIndicator: styles => ({
         ...styles,
         color: '#1D1D1B',
     }),
-    menu: styles => ({
+    menu: (styles, state) => ({
         ...styles,
         backgroundColor: '#23D1AE',
         border: 'solid 2px #1D1D1B',
         borderRadius: 'none',
         margin: 0,
+        boxShadow: 'none',
+        borderBottom: state.menuIsOpen && state.menuPlacement === 'top' ? '#1D1D1B' : 'none'
     }),
 }

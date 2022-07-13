@@ -1,6 +1,5 @@
-main {
-    width: 40%;
-    height: 78%;
+.MainText {
+    width: 50%;
     margin-left: 10%;
     color: #ffffff;
     display: flex;
@@ -8,43 +7,41 @@ main {
     justify-content: flex-start;
 }
 
-main h1 {
-    font-size: 4em;
+.MainH1 {
+    font-size: 64px;
     font-weight: 700;
     letter-spacing: -1%;
-    margin-bottom: 35px;
+    margin-bottom: 3%;
+        margin-top: 3%;
 }
 
-main div {
-    width: 90px;
+.HorisontalLine {
+    width: 20%;
     height: 2px;
     background-color: #ffffff;
     opacity: 80%;
 }
 
-main h2 {
-    margin-top: 0;
-    font-size: 2em;
+.MainH2 {
+    margin-top: 0.5%;
+    font-size: 24px;
     font-weight: 300;
     opacity: 80%;
 }
 
-main ul {
-    list-style-image: url("../../assets/images/Check.svg");
-    margin: 0;
-    padding: 0 0 0 5%;
-}
+@media (max-width: 640px) {
+    .MainText {
+        margin-top: 80%;
+        width: 90%;
+        height: min-content;
+        margin-left: 5%;
+    }
 
-main li {
-    padding: 2% 6%;
-    font-size: 1.5em;
-}
+        .MainH1 {
+            font-size: 36px;
+        }
 
-.title {
-    font-weight: 400;
-}
-
-.message {
-    opacity: 80%;
-    font-weight: 300;
+        .MainH2 {
+            font-size: 20px;
+        }
 }
