@@ -8,7 +8,7 @@ export const devices = [
 ]
 
 export const customStyles = {
-    option: (styles, state) => ({
+    option: styles => ({
         ...styles,
         color: '#1D1D1B',
         padding: '10px',
@@ -23,8 +23,7 @@ export const customStyles = {
             backgroundColor: "#7FE3CE"
         }
     }),
-    control: (styles, state) => {
-        const style = {
+    control: styles => ({
         ...styles,
         backgroundColor: '#23D1AE',
             borderRadius: 'none',
@@ -38,13 +37,7 @@ export const customStyles = {
             outline: 'none'
             }
 
-        }
-        if (state.menuIsOpen && state.menuPlacement === 'top') {
-            style.borderTop = 'none'
-        }
-        return style;
-
-    },
+    }),
     indicatorSeparator: styles => ({
         ...styles,
         display: 'none'
@@ -53,13 +46,12 @@ export const customStyles = {
         ...styles,
         color: '#1D1D1B',
     }),
-    menu: (styles, state) => ({
+    menu: styles => ({
         ...styles,
         backgroundColor: '#23D1AE',
         border: 'solid 2px #1D1D1B',
         borderRadius: 'none',
         margin: 0,
         boxShadow: 'none',
-        borderBottom: state.menuIsOpen && state.menuPlacement === 'top' ? '#1D1D1B' : 'none'
     }),
 }

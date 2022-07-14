@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './BuyBlock.css';
-import productIcon from '../../assets/images/ProductIcon.svg';
 import Star from '../../assets/images/Star.svg';
 import HalfStar from '../../assets/images/Half-star.svg';
 import Windows from '../../assets/images/Windows.svg';
@@ -9,6 +8,7 @@ import Android from '../../assets/images/Android.svg';
 import IOS from '../../assets/images/IOS.svg';
 import { customStyles, devices } from './constans';
 import Select from 'react-select';
+import ProductIcon from './poductIcon/ProductIcon';
 
 const BuyBlock = ({ currency }) => {
     let buyBlockRef = useRef()
@@ -40,6 +40,18 @@ const BuyBlock = ({ currency }) => {
 
     const priceInCurrency = (+price * multiplier).toFixed(2)
     const bigPrice = (priceInCurrency * 1.2).toFixed(2)
+
+    const priceArr = String(priceInCurrency).split('.')
+    const bigPriceArr = String(bigPrice).split('.')
+
+    const makeOptions = () => {
+        let options = []
+        devices.map((item) => {
+            let label = item.label + ' ' + sign + ' ' + String((+item.value * multiplier).toFixed(2))
+            options.push({ label, value: item.value })
+        })
+        return options
+    }
 
     useEffect(() => {
         switch (currency) {
@@ -85,14 +97,13 @@ const BuyBlock = ({ currency }) => {
             </div>
             <div className='GreenBlock'>
                 <div className='FirstBlockInGreenBlock'>
-                    <img src={productIcon} className='ProductIcon' alt='product icon' />
+                    <ProductIcon className='ProductIcon' />
                 <div className='KasperAndStars'>
                         <div className='KasperText'>
                             Kaspersky Internet Security
                         </div>
                         {shortBuyBlockToggle ?
-                            <div><span className='BoldPrice'>{sign} {priceInCurrency}</span>
-                                -  <span className='Choosed'>{choosedOption}</span></div>
+                            <div><span className='BoldPrice'>{sign} {priceInCurrency}</span>{" - "}<span className='Choosed'>{choosedOption}</span></div>
                             : <div className='Score'>
                                 {stars}
                         <span>(1503 reviews)</span>
@@ -101,20 +112,21 @@ const BuyBlock = ({ currency }) => {
                 </div>
                 <div className='VerticalLine' />
                 <div className='PriceBlock'>
-                    <span className='CrossedOut'>{sign} {bigPrice}</span>
-                    <span className='BoldPrice'>{sign} {priceInCurrency}</span>
+                    <div className='Del'><span className='CrossedOut'>{sign} {bigPriceArr[0] + '.'}<span className='LittleNumbers'>{bigPriceArr[1]}</span></span></div>
+                    <span className='BoldPrice'>{sign} {priceArr[0] + '.'}<span className='LittleNumbers'>{priceArr[1]}</span></span>
                 </div>
                 <div className='VerticalLine' />
                 <div className='SelectDevice'>
                     <Select
-                        options={devices}
+                        options={makeOptions()}
                         defaultValue={{ label: '3 Devices, 1 Year', value: '35.99' }}
                         styles={customStyles}
                         menuPlacement="auto"
                         menuPosition="fixed"
                         onChange={(v) => {
                             setPrice(v.value)
-                            setChoosedOption(v.label)
+                            let str = v.label.split(' ').splice(0, 4).join(' ')
+                            setChoosedOption(str)
                         }} />
                 </div>
 

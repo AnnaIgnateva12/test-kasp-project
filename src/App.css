@@ -16,6 +16,7 @@
         min-height: 400px;
         display: flex;
         flex-direction: column;
+        background: #1D1D1B;
       }
     
       .Main {
