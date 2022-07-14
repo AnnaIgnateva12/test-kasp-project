@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-kasp-project/static/css/main.ec8e9fcd.css",
-    "main.js": "/test-kasp-project/static/js/main.2fa52b1d.js",
+    "main.css": "/test-kasp-project/static/css/main.c5af921c.css",
+    "main.js": "/test-kasp-project/static/js/main.363790c3.js",
     "static/js/787.3535e913.chunk.js": "/test-kasp-project/static/js/787.3535e913.chunk.js",
     "static/media/Intersect.png": "/test-kasp-project/static/media/Intersect.5b264f936a1eb92837c1.png",
     "static/media/Windows.svg": "/test-kasp-project/static/media/Windows.e81c20d78fd6bada3782e1dd952c45fe.svg",
@@ -13,12 +13,12 @@
     "static/media/Star.svg": "/test-kasp-project/static/media/Star.7b7efd647d569823fddc7d2325d1be35.svg",
     "index.html": "/test-kasp-project/index.html",
     "static/media/Check.svg": "/test-kasp-project/static/media/Check.6400a6cdf4946593f71b.svg",
-    "main.ec8e9fcd.css.map": "/test-kasp-project/static/css/main.ec8e9fcd.css.map",
-    "main.2fa52b1d.js.map": "/test-kasp-project/static/js/main.2fa52b1d.js.map",
+    "main.c5af921c.css.map": "/test-kasp-project/static/css/main.c5af921c.css.map",
+    "main.363790c3.js.map": "/test-kasp-project/static/js/main.363790c3.js.map",
     "787.3535e913.chunk.js.map": "/test-kasp-project/static/js/787.3535e913.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec8e9fcd.css",
-    "static/js/main.2fa52b1d.js"
+    "static/css/main.c5af921c.css",
+    "static/js/main.363790c3.js"
   ]
 }
