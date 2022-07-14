@@ -20,7 +20,7 @@ const BuyBlock = ({ currency }) => {
         let widthBuyBlock = buyBlockRef.current.offsetWidth;
         if (widthBuyBlock < 640 && scrollTop > heightBuyBlock) {
             setShortBuyBlockToggle(true)
-            setBuyBlockStyle('ShortBuyBlock')
+            setBuyBlockStyle('BuyBlock ShortBuyBlock')
         }
     }
     useEffect(() => {
@@ -79,7 +79,7 @@ const BuyBlock = ({ currency }) => {
             onClick={() => {
                 if (shortBuyBlockToggle) {
                     setShortBuyBlockToggle(false)
-                    setBuyBlockStyle('StickyBuyBlock')
+                    setBuyBlockStyle('BuyBlock StickyBuyBlock')
                 }
             }}>
             <div className='TransparentBlock'>

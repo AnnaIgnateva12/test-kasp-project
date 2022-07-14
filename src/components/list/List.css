@@ -23,3 +23,8 @@
     opacity: 80%;
     font-weight: 300;
 }
+@media (max-width: 640px) {
+    .ListContainer {
+        width: 90%;
+    }
+}
