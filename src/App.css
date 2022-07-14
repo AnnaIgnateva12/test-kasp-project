@@ -6,8 +6,8 @@
   }
   
     .Main {
-    min-width: 900px;
-    
+    height: 100vh;
+      min-width: 900px;
     }
     
     @media (max-width: 640px) {

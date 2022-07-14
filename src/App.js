@@ -14,8 +14,8 @@ function App() {
       <div className='Main'>
         <Header setCurrency={setCurrency} />
         <MainText />
+        <List />
       </div>
-      <List />
       <BuyBlock currency={currency} />
       <div style={{ height: '2000px' }} />
     </div>
