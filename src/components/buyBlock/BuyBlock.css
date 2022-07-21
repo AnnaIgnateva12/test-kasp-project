@@ -1,267 +1,265 @@
 .BuyBlock {
-    position: sticky;
-    top: 0;
-    bottom: 16px;
-    width: 80%;
-    min-width: 700px;
-        height: 14vh;
-        margin: 0 10%;
-    display: flex;
-    flex-direction: column;
+  position: sticky;
+  top: 0;
+  bottom: 16px;
+  width: 80%;
+  min-width: 700px;
+  height: 14vh;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .TransparentBlock {
-    width: 100%;
-    min-width: 700px;
-    height: 25%;
-    min-height: 16px;
-    color: #ffffff;
-    display: flex;
+  width: 100%;
+  min-width: 700px;
+  height: 25%;
+  min-height: 16px;
+  color: #ffffff;
+  display: flex;
 }
 
 .Compatible {
-    width: 41%;
-        min-width: 300px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 5%;
-    font-size: 12px;
+  width: 41%;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  font-size: 12px;
 }
 
 .Compatible img {
-    height: 10px;
+  height: 10px;
 }
 
 .Save {
-    width: 25%;
-    background-color: #8233FF;
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 25%;
+  background-color: #8233ff;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .GreenBlock {
-    width: 100%;
-    min-width: 700px;
-    height: 75%;
-    min-height: 60px;
-        background: linear-gradient(to right, #7EFF33 0%, #23D1AE 10%);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
+  width: 100%;
+  min-width: 700px;
+  height: 75%;
+  min-height: 60px;
+  background: linear-gradient(to right, #7eff33 0%, #23d1ae 10%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .FirstBlockInGreenBlock {
-    width: 41%;
-    min-width: 300px;
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 41%;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-
 .KasperAndStars {
-    margin-left: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
 }
 
 .KasperText {
-    font-weight: 700;
-    font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .Score {
-    font-weight: 300;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 2%;
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 2%;
 }
 
 .VerticalLine {
-    width: 2px;
-    height: 80%;
-    background-color: #ffffff;
-    opacity: 20%;
+  width: 2px;
+  height: 80%;
+  background-color: #ffffff;
+  opacity: 20%;
 }
 .PriceBlock {
-    width: 24.8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 24.8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .CrossedOut {
-    color: #006D5C;
-    font-size: 16px;
+  color: #006d5c;
+  font-size: 16px;
 }
 .Del {
-    position: relative;
+  position: relative;
 }
 
 .Del::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1.5px;
-    background-color: #006D5C;
-    background-size: cover;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #006d5c;
+  background-size: cover;
 }
 
 .BoldPrice {
-    font-weight: 900;
-    font-size: 24px;
+  font-weight: 900;
+  font-size: 24px;
 }
 
 .LittleNumbers {
-    font-size: 60%;
+  font-size: 60%;
 }
 .SelectDevice {
-    width: 20%;
-        height: 60%;
-    margin-left: 2%;
-    margin-top: 'none';
+  width: 20%;
+  height: 60%;
+  margin-left: 2%;
+  margin-top: 'none';
 }
 
 .BuyNow {
-    width: 10%;
-    height: 50%;
-    background-color: #FF3748;
-    border-radius: 3px;
-    outline: none;
-    border: none;
-    color: #ffffff;
-    margin-left: 1%;
-    cursor: pointer;
+  width: 10%;
+  height: 50%;
+  background-color: #ff3748;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  margin-left: 1%;
+  cursor: pointer;
 }
 @media (max-width: 640px) {
-    .BuyBlock {
-        position: relative;
-            left: 5%;
-            width: 90%;
-        min-width: 300px;
-        height: 400px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
+  .BuyBlock {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    min-width: 300px;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .StickyBuyBlock {
-        bottom: -70px;
-            top: auto;
-        position: fixed;
-    }
+  .StickyBuyBlock {
+    bottom: -70px;
+    top: auto;
+    position: fixed;
+  }
 
-    .ShortBuyBlock {
-        bottom: 6px;
-            top: auto;
-        position: fixed;
-        height: 64px;
-    }
+  .ShortBuyBlock {
+    bottom: 6px;
+    top: auto;
+    position: fixed;
+    height: 64px;
+  }
 
-    .TransparentBlock {
-        flex-direction: column;
-        min-width: 300px;
-        min-height: 32px;
-        height: min-content;
-    }
+  .TransparentBlock {
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 32px;
+    height: min-content;
+  }
 
-    .Compatible {
-        width: 100%;
-        margin: 0 0 10px 8px
-    }
+  .Compatible {
+    width: 100%;
+    margin: 0 0 10px 8px;
+  }
 
-    .Save {
-        width: 50%;
-        height: 100%;
-    }
+  .Save {
+    width: 50%;
+    height: 100%;
+  }
 
-    .GreenBlock {
-        flex-direction: column;
-        min-width: 300px;
-        height: min-content;
-        min-height: 36px;
-        background: linear-gradient(to bottom right, #7EFF33 0%, #23D1AE 20%);
-    }
+  .GreenBlock {
+    flex-direction: column;
+    min-width: 300px;
+    height: min-content;
+    min-height: 36px;
+    background: linear-gradient(to bottom right, #7eff33 0%, #23d1ae 20%);
+  }
 
-    .FirstBlockInGreenBlock {
-        width: 100%;
-        padding: 2% 0;
-        min-width: 300px;
-        justify-content: space-evenly;
-    }
+  .FirstBlockInGreenBlock {
+    width: 100%;
+    padding: 2% 0;
+    min-width: 300px;
+    justify-content: space-evenly;
+  }
 
-    .GreenBlock .VerticalLine {
-        width: 90%;
-        height: 2px;
-    }
+  .GreenBlock .VerticalLine {
+    width: 90%;
+    height: 2px;
+  }
 
-    .PriceBlock {
-        width: 100%;
-        justify-content: space-evenly;
-    }
+  .PriceBlock {
+    width: 100%;
+    justify-content: space-evenly;
+  }
 
-    .SelectDevice {
-        width: 90%;
-        height: 64px;
-        margin-top: 10px;
-        margin-left: 0;
-    }
+  .SelectDevice {
+    width: 90%;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 
-    .BuyNow {
-        width: 90%;
-        height: 48px;
-        margin: 10px 0;
-    }
+  .BuyNow {
+    width: 90%;
+    height: 48px;
+    margin: 10px 0;
+  }
 
-    .ShortBuyBlock .GreenBlock {
-        flex-direction: row;
-    }
+  .ShortBuyBlock .GreenBlock {
+    flex-direction: row;
+  }
 
-    .ShortBuyBlock .TransparentBlock {
-        display: none;
-    }
+  .ShortBuyBlock .TransparentBlock {
+    display: none;
+  }
 
-    .ShortBuyBlock .ProductIcon {
-        display: none;
-    }
+  .ShortBuyBlock .ProductIcon {
+    display: none;
+  }
 
-    .ShortBuyBlock .SelectDevice {
-        display: none
-    }
+  .ShortBuyBlock .SelectDevice {
+    display: none;
+  }
 
-    .ShortBuyBlock .VerticalLine {
-        display: none
-    }
+  .ShortBuyBlock .VerticalLine {
+    display: none;
+  }
 
-    .ShortBuyBlock .PriceBlock {
-        display: none
-    }
+  .ShortBuyBlock .PriceBlock {
+    display: none;
+  }
 
-    .ShortBuyBlock .Choosed {
-        font-size: 14px;
-        font-weight: 300;
-    }
+  .ShortBuyBlock .Choosed {
+    font-size: 14px;
+    font-weight: 300;
+  }
 
-    .ShortBuyBlock .BoldPrice {
-        font-size: 14px;
-        font-weight: 600;
-    }
+  .ShortBuyBlock .BoldPrice {
+    font-size: 14px;
+    font-weight: 600;
+  }
 
-    .ShortBuyBlock .FirstBlockInGreenBlock {
-        min-width: 100px;
-        justify-content: flex-start;
-    }
+  .ShortBuyBlock .FirstBlockInGreenBlock {
+    min-width: 100px;
+    justify-content: flex-start;
+  }
 
-    .ShortBuyBlock .BuyNow {
-        width: 25%;
-        margin: 10px;
-    }
+  .ShortBuyBlock .BuyNow {
+    width: 25%;
+    margin: 10px;
+  }
 }

@@ -1,47 +1,47 @@
 .MainText {
-    width: 50%;
-    margin-left: 10%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  width: 50%;
+  margin-left: 10%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .MainH1 {
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: -1%;
-    margin-bottom: 3%;
-        margin-top: 3%;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -1%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 .HorisontalLine {
-    width: 20%;
-    height: 2px;
-    background-color: #ffffff;
-    opacity: 80%;
+  width: 20%;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 80%;
 }
 
 .MainH2 {
-    margin-top: 0.5%;
-    font-size: 24px;
-    font-weight: 300;
-    opacity: 80%;
+  margin-top: 0.5%;
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 80%;
 }
 
 @media (max-width: 640px) {
-    .MainText {
-        margin-top: 80%;
-        width: 90%;
-        height: min-content;
-        margin-left: 5%;
-    }
+  .MainText {
+    margin-top: 80%;
+    width: 90%;
+    height: min-content;
+    margin-left: 5%;
+  }
 
-        .MainH1 {
-            font-size: 36px;
-        }
+  .MainH1 {
+    font-size: 36px;
+  }
 
-        .MainH2 {
-            font-size: 20px;
-        }
+  .MainH2 {
+    font-size: 20px;
+  }
 }

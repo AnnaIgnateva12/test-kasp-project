@@ -1,15 +1,15 @@
 .ProductIcon {
-    width: 48px;
-    margin-left: 16px;
+  width: 48px;
+  margin-left: 16px;
 }
 
 .ProductIconStroke {
-    stroke: #ffffff;
-    stroke-width: 3px
+  stroke: #ffffff;
+  stroke-width: 3px;
 }
 
 @media (max-width: 640px) {
-    .ProductIconStroke {
-        stroke: none;
-    }
+  .ProductIconStroke {
+    stroke: none;
+  }
 }
